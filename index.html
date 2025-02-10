@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selector de Color RGB</h1>
+        
+        <div class="inputs">
+            <div class="input-group">
+                <label for="r">Rojo (R):</label>
+                <input type="number" id="r" min="0" max="255" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="g">Verde (G):</label>
+                <input type="number" id="g" min="0" max="255" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="b">Azul (B):</label>
+                <input type="number" id="b" min="0" max="255" placeholder="0">
+            </div>
+        </div>
+
+        <div class="color-picker">
+            <label for="colorPicker">Selecciona un color:</label>
+            <input type="color" id="colorPicker">
+        </div>
+
+        <div class="output">
+            <div id="colorBox" class="color-box"></div>
+            <p id="rgbValue">RGB: (0, 0, 0)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
